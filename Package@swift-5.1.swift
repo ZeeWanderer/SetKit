@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -24,20 +24,17 @@ let package = Package(
     targets: [
         .target(
             name: "SetKitBase",
-            path: "Classes/Base",
-            swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
+            path: "Classes/Base"
         ),
         .target(
             name: "SetKit",
             dependencies: ["SetKitBase"],
-            path: "Classes/UIKit+PropertySetter",
-            swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
+            path: "Classes/UIKit+PropertySetter"
         ),
         .target(
             name: "SetKitSnapKit",
             dependencies: ["SetKitBase", .product(name: "SnapKit", package: "SnapKit")],
-            path: "Classes/SnapKit+PropertySetter",
-            swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
+            path: "Classes/SnapKit+PropertySetter"
         )
     ]
 )
