@@ -22,7 +22,9 @@
 //  THE SOFTWARE.
 
 import UIKit
+#if canImport(SetKitBase)
 import SetKitBase
+#endif
 
 // MARK: - UITextView
 public extension PropertySetter where Base: UITextView {

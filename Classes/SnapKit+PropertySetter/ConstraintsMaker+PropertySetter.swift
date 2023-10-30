@@ -24,7 +24,9 @@
 #if canImport(SnapKit)
 import UIKit
 import SnapKit
+#if canImport(SetKitBase)
 import SetKitBase
+#endif
 
 public extension PropertySetter where Base: UIView {
   

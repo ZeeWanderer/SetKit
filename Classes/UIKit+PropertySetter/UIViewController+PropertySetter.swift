@@ -22,7 +22,9 @@
 //  THE SOFTWARE.
 
 import UIKit
+#if canImport(SetKitBase)
 import SetKitBase
+#endif
 
 // MARK: - UIViewController
 public extension PropertySetter where Base: UIViewController {
