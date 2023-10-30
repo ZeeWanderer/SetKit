@@ -43,6 +43,7 @@ public extension PropertySetter where Base: UINavigationController {
   ///       .delegate(self)
   /// ```
   ///
+  @inlinable
   @discardableResult
   func navigationBarProperties(_ block: @escaping (PropertySetter<UINavigationBar>) -> Void) -> Self {
     block(base.navigationBar.set)
@@ -63,6 +64,7 @@ public extension PropertySetter where Base: UINavigationController {
   ///       // Fall back to the navigationController properties
   ///   .delegate(self)
   /// ```
+  @inlinable
   @discardableResult
   func navigationItemProperties(_ block: @escaping (PropertySetter<UINavigationItem>) -> Void) -> Self {
     block(base.navigationItem.set)
@@ -72,6 +74,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// PropertySetter wrapper for `.delegate`
   /// - **Summary:** The delegate of the navigation controller object.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621876-delegate) for more info.
+  @inlinable
   @discardableResult
   func delegate(_ delegate: UINavigationControllerDelegate?) -> Self {
     base.delegate = delegate
@@ -85,6 +88,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// **PropertyWrapper description:**
   ///
   /// - If you want to animate the change use ``SetKit/PropertySetter/navigationBarHidden(_:animated:)`` wrapper
+  @inlinable
   @discardableResult
   func navigationBarHidden(_ bool: Bool) -> Self {
     base.isNavigationBarHidden = bool
@@ -98,6 +102,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// **PropertyWrapper description:**
   ///
   /// - If you want to make the change  without animation set `animated` parameter to `false` or use ``SetKit/PropertySetter/navigationBarHidden(_:)`` wrapper
+  @inlinable
   @discardableResult
   func navigationBarHidden(_ hidden: Bool, animated: Bool) -> Self {
     base.setNavigationBarHidden(hidden, animated: animated)
@@ -111,6 +116,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// **PropertyWrapper description:**
   ///
   /// - If you want to animate the change use ``SetKit/PropertySetter/viewControllers(_:animated:)-69lw5`` wrapper
+  @inlinable
   @discardableResult
   func viewControllers(_ controllers: [UIViewController]) -> Self {
     base.viewControllers = controllers
@@ -124,6 +130,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// **PropertyWrapper description:**
   ///
   /// - If you want to make the change  without animation set `animated` parameter to `false` or use ``SetKit/PropertySetter/viewControllers(_:)-8zuzl`` wrapper
+  @inlinable
   @discardableResult
   func viewControllers(_ controllers: [UIViewController], animated: Bool) -> Self {
     base.setViewControllers(controllers, animated: animated)
@@ -133,6 +140,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// PropertySetter wrapper for `.hidesBarsOnSwipe`
   /// - **Summary:** A Boolean value indicating whether the navigation bar hides its bars in response to a swipe gesture.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621883-hidesbarsonswipe) for more info.
+  @inlinable
   @discardableResult
   func hidesBarsOnSwipe(_ bool: Bool) -> Self {
     base.hidesBarsOnSwipe = bool
@@ -142,6 +150,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// PropertySetter wrapper for `.hidesBarsOnTap`
   /// - **Summary:** A Boolean value indicating whether the navigation controller allows hiding of its bars using a tap gesture.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621879-hidesbarsontap) for more info.
+  @inlinable
   @discardableResult
   func hidesBarsOnTap(_ bool: Bool) -> Self {
     base.hidesBarsOnTap = bool
@@ -151,6 +160,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// PropertySetter wrapper for `.hidesBarsWhenKeyboardAppears`
   /// - **Summary:**  A Boolean value indicating whether the navigation controller hides its bars when the keyboard appears.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621881-hidesbarswhenkeyboardappears) for more info.
+  @inlinable
   @discardableResult
   func hidesBarsWhenKeyboardAppears(_ bool: Bool) -> Self {
     base.hidesBarsWhenKeyboardAppears = bool
@@ -160,6 +170,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// PropertySetter wrapper for `.hidesBottomBarWhenPushed`
   /// - **Summary:** A Boolean value indicating whether the toolbar at the bottom of the screen is hidden when the view controller is pushed on to a navigation controller.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621863-hidesbottombarwhenpushed) for more info.
+  @inlinable
   @discardableResult
   func hidesBottomBarWhenPushed(_ bool: Bool) -> Self {
     base.hidesBottomBarWhenPushed = bool
@@ -169,6 +180,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// PropertySetter wrapper for `.hidesBarsWhenVerticallyCompact`
   /// - **Summary:**  A Boolean value indicating whether the navigation controller hides its bars in a vertically compact environment.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621869-hidesbarswhenverticallycompact) for more info.
+  @inlinable
   @discardableResult
   func hidesBarsWhenVerticallyCompact(_ bool: Bool) -> Self {
     base.hidesBarsWhenVerticallyCompact = bool
@@ -182,6 +194,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// **PropertyWrapper description:**
   ///
   /// - If you want to animate the change use ``SetKit/PropertySetter/toolbarHidden(_:animated:)``  wrapper
+  @inlinable
   @discardableResult
   func toolbarHidden(_ bool: Bool) -> Self {
     base.isToolbarHidden = bool
@@ -195,6 +208,7 @@ public extension PropertySetter where Base: UINavigationController {
   /// **PropertyWrapper description:**
   ///
   /// - If you want to make the change  without animation set `animated` parameter to `false` or use ``SetKit/PropertySetter/toolbarHidden(_:)`` wrapper
+  @inlinable
   @discardableResult
   func toolbarHidden(_ hidden: Bool, animated: Bool) -> Self {
     base.setToolbarHidden(hidden, animated: animated)

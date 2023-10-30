@@ -48,6 +48,7 @@ public extension PropertySetter where Base: UIView {
   ///   .font(.systemFont(ofSize: 10))
   ///    .multiline()
   /// ```
+  @inlinable
   @discardableResult
   func constraints(_ closure: (ConstraintMaker) -> Void) -> Self {
       base.snp.makeConstraints(closure)

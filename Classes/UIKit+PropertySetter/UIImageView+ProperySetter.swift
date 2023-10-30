@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.image`
   /// - **Summary:**  The image displayed in the image view.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiimageview/1621069-image) for more info.
+  @inlinable
   @discardableResult
   func image(_ image: UIImage?) -> Self {
     base.image = image
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.adjustsImageSizeForAccessibilityContentSizeCategory`
   /// - **Summary:**  A Boolean value that indicates whether the image size increases to support accessibility content size categories.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiaccessibilitycontentsizecategoryimageadjusting/2890929-adjustsimagesizeforaccessibility) for more info.
+  @inlinable
   @discardableResult
   func adjustsImageSizeForAccessibilityContentSizeCategory(_ bool: Bool) -> Self {
     base.adjustsImageSizeForAccessibilityContentSizeCategory = bool
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.animationImages`
   /// - **Summary:**  An array of UIImage objects to use for an animation.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiimageview/1621068-animationimages) for more info.
+  @inlinable
   @discardableResult
   func animationImages(_ images: [UIImage]?) -> Self {
     base.animationImages = images
@@ -57,6 +60,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.highlightedAnimationImages`
   /// - **Summary:**  An array of UIImage objects to use for an animation when the view is highlighted.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiimageview/1621065-highlightedanimationimages) for more info.
+  @inlinable
   @discardableResult
   func highlightedAnimationImages(_ images: [UIImage]?) -> Self {
     base.highlightedAnimationImages = images
@@ -66,6 +70,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.animationDuration`
   /// - **Summary:**  The amount of time it takes to go through one cycle of the images.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiimageview/1621058-animationduration) for more info.
+  @inlinable
   @discardableResult
   func animationDuration(_ duration: TimeInterval) -> Self {
     base.animationDuration = duration
@@ -75,6 +80,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.animationRepeatCount`
   /// - **Summary:**  Specifies the number of times to repeat the animation.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiimageview/1621070-animationrepeatcount) for more info.
+  @inlinable
   @discardableResult
   func animationRepeatCount(_ count: Int) -> Self {
     base.animationRepeatCount = count
@@ -84,6 +90,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.preferredSymbolConfiguration`
   /// - **Summary:**  The configuration values to use when rendering the image.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiimageview/3295948-preferredsymbolconfiguration) for more info.
+  @inlinable
   @discardableResult
   func preferredSymbolConfiguration(_ config: UIImage.SymbolConfiguration) -> Self {
     base.preferredSymbolConfiguration = config
@@ -93,6 +100,7 @@ public extension PropertySetter where Base: UIImageView {
   /// PropertySetter wrapper for `.startAnimating()`
   /// - **Summary:**  Starts animating the images in the receiver.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiimageview/1621061-startanimating) for more info.
+  @inlinable
   @discardableResult
   func startAnimating() -> Self {
     base.startAnimating()
@@ -101,6 +109,7 @@ public extension PropertySetter where Base: UIImageView {
   
   /// PropertySetter wrapper for `.stopAnimating()`
   /// - **Summary:**  Stops animating the images in the receiver.
+  @inlinable
   @discardableResult
   func stopAnimating() -> Self {
     base.stopAnimating()
@@ -114,6 +123,7 @@ public extension PropertySetter where Base: UIImageView {
 public extension PropertySetter where Base: UIImageView {
   
   /// PropertySetter wrapper for `.preferredImageDynamicRange`
+  @inlinable
   @discardableResult
   func preferredImageDynamicRange(_ range: UIImage.DynamicRange) -> Self {
     base.preferredImageDynamicRange = range

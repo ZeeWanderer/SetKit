@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.date`
   /// - **Summary:**  The date displayed by the date picker.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615975-date) for more info.
+  @inlinable
   @discardableResult
   func date(_ date: Date) -> Self {
     base.date = date
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.setDate(_:, animated:)`
   /// - **Summary:**  Sets the date to display in the date picker, with an option to animate the setting.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615971-setdate) for more info.
+  @inlinable
   @discardableResult
   func date(_ date: Date, animated: Bool) -> Self {
     base.setDate(date, animated: animated)
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.datePickerMode`
   /// - **Summary:**  The mode of the date picker.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615997-datepickermode) for more info.
+  @inlinable
   @discardableResult
   func datePickerMode(_ mode: UIDatePicker.Mode) -> Self {
     base.datePickerMode = mode
@@ -57,6 +60,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.minimumDate`
   /// - **Summary:**  The minimum date that a date picker can show.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615980-minimumdate) for more info.
+  @inlinable
   @discardableResult
   func minimumDate(_ date: Date?) -> Self {
     base.minimumDate = date
@@ -66,6 +70,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.maximumDate`
   /// - **Summary:**  The maximum date that a date picker can show.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615999-maximumdate) for more info.
+  @inlinable
   @discardableResult
   func maximumDate(_ date: Date?) -> Self {
     base.maximumDate = date
@@ -75,6 +80,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.calendar`
   /// - **Summary:**  The calendar to use for the date picker.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615973-calendar) for more info.
+  @inlinable
   @discardableResult
   func calendar(_ calendar: Calendar) -> Self {
     base.calendar = calendar
@@ -84,6 +90,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.countDownDuration`
   /// - **Summary:**  The value displayed by the date picker when the mode property is set to show a countdown time.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615986-countdownduration) for more info.
+  @inlinable
   @discardableResult
   func countDownDuration(_ duration: TimeInterval) -> Self {
     base.countDownDuration = duration
@@ -93,6 +100,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.locale`
   /// - **Summary:**  The locale used by the date picker.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615995-locale) for more info.
+  @inlinable
   @discardableResult
   func locale(_ locale: Locale?) -> Self {
     base.locale = locale
@@ -102,6 +110,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.minuteInterval`
   /// - **Summary:**  The interval at which the date picker should display minutes.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615998-minuteinterval) for more info.
+  @inlinable
   @discardableResult
   func minuteInterval(_ interval: Int) -> Self {
     base.minuteInterval = interval
@@ -111,6 +120,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.timeZone`
   /// - **Summary:**  The time zone reflected in the date displayed by the date picker.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/1615976-timezone) for more info.
+  @inlinable
   @discardableResult
   func timeZone(_ timeZone: TimeZone?) -> Self {
     base.timeZone = timeZone
@@ -126,6 +136,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.preferredDatePickerStyle`
   /// - **Summary:**  The preferred style of the date picker.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/3526124-preferreddatepickerstyle) for more info.
+  @inlinable
   @discardableResult
   func preferredDatePickerStyle(_ style: UIDatePickerStyle) -> Self {
     base.preferredDatePickerStyle = style
@@ -141,6 +152,7 @@ public extension PropertySetter where Base: UIDatePicker {
   /// PropertySetter wrapper for `.roundsToMinuteInterval`
   /// - **Summary:**  A Boolean value that determines whether the date rounds to a specific minute interval.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uidatepicker/3791478-roundstominuteinterval) for more info.
+  @inlinable
   @discardableResult
   func roundsToMinuteInterval(_ bool: Bool) -> Self {
     base.roundsToMinuteInterval = bool

@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.currentPage`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func currentPage(_ page: Int) -> Self {
     base.currentPage = page
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.numberOfPages`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func numberOfPages(_ page: Int) -> Self {
     base.numberOfPages = page
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.currentPageIndicatorTintColor`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func currentPageIndicatorTintColor(_ color: UIColor) -> Self {
     base.currentPageIndicatorTintColor = color
@@ -57,6 +60,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.pageIndicatorTintColor`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func pageIndicatorTintColor(_ color: UIColor) -> Self {
     base.pageIndicatorTintColor = color
@@ -66,6 +70,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.hidesForSinglePage`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func hidesForSinglePage(_ bool: Bool) -> Self {
     base.hidesForSinglePage = bool
@@ -81,6 +86,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.allowsContinuousInteraction`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func allowsContinuousInteraction(_ bool: Bool) -> Self {
     base.allowsContinuousInteraction = bool
@@ -90,6 +96,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.backgroundStyle`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func backgroundStyle(_ style: UIPageControl.BackgroundStyle) -> Self {
     base.backgroundStyle = style
@@ -99,6 +106,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.preferredIndicatorImage`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func preferredIndicatorImage(_ image: UIImage?) -> Self {
     base.preferredIndicatorImage = image
@@ -108,6 +116,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.preferredIndicatorImage`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func indicatorImage(_ image: UIImage?, forPage: Int) -> Self {
     base.setIndicatorImage(image, forPage: forPage)
@@ -123,6 +132,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.preferredIndicatorImage`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func preferredCurrentPageIndicatorImage(_ image: UIImage) -> Self {
     base.preferredCurrentPageIndicatorImage = image
@@ -132,6 +142,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.direction`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func direction(_ direction: UIPageControl.Direction) -> Self {
     base.direction = direction
@@ -141,6 +152,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.preferredIndicatorImage`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func currentPageIndicatorImage(_ image: UIImage?, forPage: Int) -> Self {
     base.setCurrentPageIndicatorImage(image, forPage: forPage)
@@ -156,6 +168,7 @@ public extension PropertySetter where Base: UIPageControl {
   /// PropertySetter wrapper for `.progress`
   /// - **Summary:**
   /// See [**documentation**]() for more info.
+  @inlinable
   @discardableResult
   func progress(_ progress: UIPageControlProgress?) -> Self {
     base.progress = progress

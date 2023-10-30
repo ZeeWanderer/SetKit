@@ -44,6 +44,7 @@ public extension PropertySetter where Base: UIButton {
   /// ```
   ///
   /// - Attention: If the button does not have titleLabel this wrapper will call `.title("", for: .normal)` wrapper and force unwrap the optional
+  @inlinable
   @discardableResult
   func titleLabelProperties(_ block: @escaping (PropertySetter<UILabel>) -> Void) -> Self {
     if let label = base.titleLabel {
@@ -71,6 +72,7 @@ public extension PropertySetter where Base: UIButton {
   ///     // Fall back to the button properties
   ///   .enabled(false)
   /// ```
+  @inlinable
   @discardableResult
   func imageViewProperties(_ block: @escaping (PropertySetter<UIImageView>?) -> Void) -> Self {
     block(base.imageView?.set)
@@ -80,6 +82,7 @@ public extension PropertySetter where Base: UIButton {
   /// PropertySetter wrapper for `.tintColor`
   /// - **Summary**: The tint color to apply to the button title and image.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/1624025-tintcolor) for more info.
+  @inlinable
   @discardableResult
   func tintColor(_ color: UIColor) -> Self {
     base.tintColor = color
@@ -90,6 +93,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary**:  Sets the title to use for the specified state.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/1624018-settitle) for more info.
   /// - Note: The default implementation of `event` is `UIControl.State = .normal`
+  @inlinable
   @discardableResult
   func title(_ title: String?, for state: UIControl.State = .normal) -> Self {
     base.setTitle(title, for: state)
@@ -100,6 +104,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary:**  Sets the color of the title to use for the specified state.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/1623993-settitlecolor) for more info.
   /// - Note: The default implementation of `event` is `UIControl.State = .normal`
+  @inlinable
   @discardableResult
   func titleColor(_ color: UIColor?, for state: UIControl.State = .normal) -> Self {
     base.setTitleColor(color, for: state)
@@ -110,6 +115,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary:**  Sets the image to use for the specified state.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/1623997-setimage) for more info.
   /// - Note: The default implementation of `event` is `UIControl.State = .normal`
+  @inlinable
   @discardableResult
   func image(_ image: UIImage?, for state: UIControl.State = .normal) -> Self {
     base.setImage(image, for: state)
@@ -120,6 +126,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary:**  Sets the background image to use for the specified button state.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/1624016-setbackgroundimage) for more info.
   /// - Note: The default implementation of `event` is `UIControl.State = .normal`
+  @inlinable
   @discardableResult
   func backgroundImage(_ image: UIImage?, for state: UIControl.State = .normal) -> Self {
     base.setBackgroundImage(image, for: state)
@@ -136,6 +143,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary:**  A menu that the button displays.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/3601189-menu) for more info.
   @available(iOS 14.0, *)
+  @inlinable
   @discardableResult
   func menu(_ menu: UIMenu) -> Self {
     base.menu = menu
@@ -146,6 +154,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary:**  The role of the button.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/3612050-role) for more info.
   @available(iOS 14.0, *)
+  @inlinable
   @discardableResult
   func role(_ role: UIButton.Role) -> Self {
     base.role = role
@@ -162,6 +171,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary:**  The configuration for the button’s appearance.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/3784627-configuration) for more info.
   @available(iOS 15.0, *)
+  @inlinable
   @discardableResult
   func configuration(_ configuration: UIButton.Configuration) -> Self {
     base.configuration = configuration
@@ -172,6 +182,7 @@ public extension PropertySetter where Base: UIButton {
   /// - **Summary:**  A closure that executes when the button state changes.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uibutton/3750769-configurationupdatehandler) for more info.
   @available(iOS 15.0, *)
+  @inlinable
   @discardableResult
   func configurationUpdateHandler(_ handler: UIButton.ConfigurationUpdateHandler?) -> Self {
     base.configurationUpdateHandler = handler

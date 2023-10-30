@@ -49,6 +49,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// ```
   /// >Tip: You can always set contentView properties using it's own PropertySetter directly: `contentView.set`
   /// 
+  @inlinable
   @discardableResult
   func contentViewProperties(_ block: @escaping (PropertySetter<UIView>) -> Void) -> Self {
     block(base.contentView.set)
@@ -58,6 +59,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.accessoryType`
   /// - **Summary:**  The type of standard accessory view for the cell to use in the table view’s normal state.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623228-accessorytype) for more info.
+  @inlinable
   @discardableResult
   func accessoryType(_ accessoryType: UITableViewCell.AccessoryType) -> Self {
     base.accessoryType = accessoryType
@@ -67,6 +69,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.selectionStyle`
   /// - **Summary:**  The style of selection for a cell.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623221-selectionstyle) for more info.
+  @inlinable
   @discardableResult
   func selectionStyle(_ style: UITableViewCell.SelectionStyle) -> Self {
     base.selectionStyle = style
@@ -76,6 +79,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.backgroundView`
   /// - **Summary:**  The view to use as the background of the cell.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623260-backgroundview) for more info.
+  @inlinable
   @discardableResult
   func backgroundView(_ view: UIView?) -> Self {
     base.backgroundView = view
@@ -85,6 +89,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.selectedBackgroundView`
   /// - **Summary:**  The view to use as the background for a selected cell.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623226-selectedbackgroundview) for more info.
+  @inlinable
   @discardableResult
   func selectedBackgroundView(_ view: UIView?) -> Self {
     base.selectedBackgroundView = view
@@ -94,6 +99,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.indentationLevel`
   /// - **Summary:**  The indentation level of the cell’s content.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623252-indentationlevel) for more info.
+  @inlinable
   @discardableResult
   func indentationLevel(_ int: Int) -> Self {
     base.indentationLevel = int
@@ -103,6 +109,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.indentationLevel`
   /// - **Summary:**  The width for each level of indentation of a cell’s content.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623247-indentationwidth) for more info.
+  @inlinable
   @discardableResult
   func indentationWidth(_ width: CGFloat) -> Self {
     base.indentationWidth = width
@@ -112,6 +119,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.separatorInset`
   /// - **Summary:**  The inset values for the separator line drawn beneath the cell.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623250-separatorinset) for more info.
+  @inlinable
   @discardableResult
   func separatorInset(_ inset: UIEdgeInsets) -> Self {
     base.separatorInset = inset
@@ -121,6 +129,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.shouldIndentWhileEditing`
   /// - **Summary:**  A Boolean value that controls whether the cell background is indented when the table view is in editing mode.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623214-shouldindentwhileediting) for more info.
+  @inlinable
   @discardableResult
   func shouldIndentWhileEditing(_ bool: Bool) -> Self {
     base.shouldIndentWhileEditing = bool
@@ -130,6 +139,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.showsReorderControl`
   /// - **Summary:**  A Boolean value that determines whether the cell shows the reordering control.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623243-showsreordercontrol) for more info.
+  @inlinable
   @discardableResult
   func showsReorderControl(_ bool: Bool) -> Self {
     base.showsReorderControl = bool
@@ -139,6 +149,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.userInteractionEnabledWhileDragging`
   /// - **Summary:**  A Boolean value indicating whether users can interact with a cell while it is being dragged.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/2897414-userinteractionenabledwhiledragg) for more info.
+  @inlinable
   @discardableResult
   func userInteractionEnabledWhileDragging(_ bool: Bool) -> Self {
     base.userInteractionEnabledWhileDragging = bool
@@ -148,6 +159,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.isEditing`
   /// - **Summary:**  A Boolean value that indicates whether the cell is in an editable state.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623268-isediting) for more info.
+  @inlinable
   @discardableResult
   func editing(_ bool: Bool) -> Self {
     base.isEditing = bool
@@ -157,6 +169,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.isHighlighted`
   /// - **Summary:**  A Boolean value that indicates whether the cell is highlighted.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623241-ishighlighted) for more info.
+  @inlinable
   @discardableResult
   func highlighted(_ bool: Bool) -> Self {
     base.isHighlighted = bool
@@ -166,6 +179,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.isSelected`
   /// - **Summary:**  A Boolean value that indicates whether the cell is selected.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623263-isselected) for more info.
+  @inlinable
   @discardableResult
   func selected(_ bool: Bool) -> Self {
     base.isSelected = bool
@@ -175,6 +189,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.setEditing(_ editing: Bool, animated: Bool)`
   /// - **Summary:**  Toggles the cell into and out of editing mode.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623222-setediting) for more info.
+  @inlinable
   @discardableResult
   func editing(_ bool: Bool, animated: Bool = true) -> Self {
     base.setEditing(bool, animated: animated)
@@ -184,6 +199,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.setHighlighted(_ highlighted: Bool, animated: Bool)`
   /// - **Summary:**  Sets the highlighted state of the cell, optionally animating the transition between states.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623280-sethighlighted) for more info.
+  @inlinable
   @discardableResult
   func highlighted(_ bool: Bool, animated: Bool = true) -> Self {
     base.setHighlighted(bool, animated: animated)
@@ -193,6 +209,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.setSelected(_ selected: Bool, animated: Bool)`
   /// - **Summary:**  Sets the selected state of the cell, optionally animating the transition between states.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/1623255-setselected) for more info.
+  @inlinable
   @discardableResult
   func selected(_ bool: Bool, animated: Bool = true) -> Self {
     base.setSelected(bool, animated: animated)
@@ -208,6 +225,7 @@ public extension PropertySetter where Base: UITableViewCell {
   /// PropertySetter wrapper for `.setNeedsUpdateConfiguration()`
   /// - **Summary:**  Informs the cell to update its configuration for its current state.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitableviewcell/3600590-setneedsupdateconfiguration) for more info.
+  @inlinable
   @discardableResult
   func needsUpdateConfiguration() -> Self {
     base.setNeedsUpdateConfiguration()

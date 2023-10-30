@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.delegate`
   /// - **Summary:**  The navigation bar’s delegate object.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624951-delegate) for more info.
+  @inlinable
   @discardableResult
   func delegate(_ delegate: UINavigationBarDelegate?) -> Self {
     base.delegate = delegate
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.isTranslucent`
   /// - **Summary:**  A Boolean value that indicates whether the navigation bar is translucent.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624928-istranslucent) for more info.
+  @inlinable
   @discardableResult
   func translucent(_ bool: Bool) -> Self {
     base.isTranslucent = bool
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.tintColor`
   /// - **Summary:**  The tint color to apply to the navigation items and bar button items.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624937-tintcolor) for more info.
+  @inlinable
   @discardableResult
   func tintColor(_ color: UIColor) -> Self {
     base.tintColor = color
@@ -57,6 +60,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.barTintColor`
   /// - **Summary:**  The tint color to apply to the navigation bar background.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624931-bartintcolor) for more info.
+  @inlinable
   @discardableResult
   func barTintColor(_ color: UIColor) -> Self {
     base.barTintColor = color
@@ -66,6 +70,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.titleTextAttributes`
   /// - **Summary:**  Display attributes for the bar’s title text.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624953-titletextattributes) for more info.
+  @inlinable
   @discardableResult
   func titleTextAttributes(_ attributes: [NSAttributedString.Key : Any]? ) -> Self {
     base.titleTextAttributes = attributes
@@ -75,6 +80,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.largeTitleTextAttributes`
   /// - **Summary:**  Display attributes for the bar's large title text.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/2919946-largetitletextattributes) for more info.
+  @inlinable
   @discardableResult
   func largeTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]? ) -> Self {
     base.largeTitleTextAttributes = attributes
@@ -84,6 +90,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.prefersLargeTitles`
   /// - **Summary:**  A Boolean value that indicates whether the title displays in a large format.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/2919946-largetitletextattributes) for more info.
+  @inlinable
   @discardableResult
   func prefersLargeTitles(_ bool: Bool) -> Self {
     base.prefersLargeTitles = bool
@@ -93,6 +100,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.items`
   /// - **Summary:**  An array of navigation items managed by the navigation bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624961-items) for more info.
+  @inlinable
   @discardableResult
   func items(_ items: [UINavigationItem]?) -> Self {
     base.items = items
@@ -102,6 +110,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.setItems_ items: [UITabBarItem]?, animated: Bool)`
   /// - **Summary:**  Replaces the navigation items currently managed by the navigation bar with the specified items.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624945-setitems) for more info.
+  @inlinable
   @discardableResult
   func items(_ items: [UINavigationItem]?, animated: Bool = true) -> Self {
     base.setItems(items, animated: animated)
@@ -111,6 +120,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.shadowImage`
   /// - **Summary:**  The shadow image to be used for the navigation bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624963-shadowimage) for more info.
+  @inlinable
   @discardableResult
   func shadowImage(_ image: UIImage?) -> Self {
     base.shadowImage = image
@@ -120,6 +130,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.setBackgroundImage(_ image: UIImage?, barMetrics: UIBarMetrics)`
   /// - **Summary:**  Sets the background image for given bar metrics.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624926-setbackgroundimage) for more info.
+  @inlinable
   @discardableResult
   func backgroundImage(_ image: UIImage?, barMetrics: UIBarMetrics) -> Self {
     base.setBackgroundImage(image, for: barMetrics)
@@ -129,6 +140,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.setBackgroundImage(_ image: UIImage?, forToolbarPosition: UIBarPosition, barMetrics: UIBarMetrics)`
   /// - **Summary:**  Sets the background image to use for a given bar position and set of metrics.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624968-setbackgroundimage) for more info.
+  @inlinable
   @discardableResult
   func backgroundImage(_ image: UIImage?, for position: UIBarPosition, barMetrics: UIBarMetrics) -> Self {
     base.setBackgroundImage(image, for: position, barMetrics: barMetrics)
@@ -138,6 +150,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.standardAppearance`
   /// - **Summary:**  The appearance settings for a standard-height navigation bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/3198028-standardappearance) for more info.
+  @inlinable
   @discardableResult
   func standardAppearance(_ appearance: UINavigationBarAppearance) -> Self {
     base.standardAppearance = appearance
@@ -147,6 +160,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.scrollEdgeAppearance`
   /// - **Summary:**  The appearance settings for the navigation bar when the edge of scrollable content aligns with the edge of the navigation bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/3198027-scrolledgeappearance) for more info.
+  @inlinable
   @discardableResult
   func scrollEdgeAppearance(_ appearance: UINavigationBarAppearance?) -> Self {
     base.scrollEdgeAppearance = appearance
@@ -156,6 +170,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.compactAppearance`
   /// - **Summary:**  The appearance settings for a compact-height navigation bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/3198026-compactappearance) for more info.
+  @inlinable
   @discardableResult
   func compactAppearance(_ appearance: UINavigationBarAppearance?) -> Self {
     base.compactAppearance = appearance
@@ -165,6 +180,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.barStyle`
   /// - **Summary:**  The navigation bar style that specifies its appearance.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624955-barstyle) for more info.
+  @inlinable
   @discardableResult
   func barStyle(_ style: UIBarStyle) -> Self {
     base.barStyle = style
@@ -174,6 +190,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.backIndicatorImage`
   /// - **Summary:**  The image shown beside the Back button.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624942-backindicatorimage) for more info.
+  @inlinable
   @discardableResult
   func backIndicatorImage(_ image: UIImage?) -> Self {
     base.backIndicatorImage = image
@@ -183,6 +200,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.backIndicatorTransitionMaskImage`
   /// - **Summary:**  The image used as a mask for content during push and pop transitions.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/1624938-backindicatortransitionmaskimage) for more info.
+  @inlinable
   @discardableResult
   func backIndicatorTransitionMaskImage(_ image: UIImage?) -> Self {
     base.backIndicatorTransitionMaskImage = image
@@ -198,6 +216,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.compactScrollEdgeAppearance`
   /// - **Summary:**  The appearance settings for a compact-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance) for more info.
+  @inlinable
   @discardableResult
   func compactScrollEdgeAppearance(_ appearance: UINavigationBarAppearance?) -> Self {
     base.compactScrollEdgeAppearance = appearance
@@ -213,6 +232,7 @@ public extension PropertySetter where Base: UINavigationBar {
   /// PropertySetter wrapper for `.preferredBehavioralStyle`
   /// - **Summary:**  The preferred behavioral style of the navigation bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uinavigationbar/3987958-preferredbehavioralstyle) for more info.
+  @inlinable
   @discardableResult
   func preferredBehavioralStyle(_ style: UIBehavioralStyle) -> Self {
     base.preferredBehavioralStyle = style

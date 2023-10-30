@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UIPickerView {
   /// PropertySetter wrapper for `.delegate`
   /// - **Summary:**  The delegate for the picker view.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uipickerview/1614379-delegate) for more info.
+  @inlinable
   @discardableResult
   func delegate(_ delegate: UIPickerViewDelegate?) -> Self {
     base.delegate = delegate
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UIPickerView {
   /// PropertySetter wrapper for `.dataSource`
   /// - **Summary:**  The data source for the picker view.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uipickerview/1614370-datasource) for more info.
+  @inlinable
   @discardableResult
   func dataSource(_ dataSource: UIPickerViewDataSource?) -> Self {
     base.dataSource = dataSource
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UIPickerView {
   /// PropertySetter wrapper for `.selectRow(_ row: Int, inComponent: Int, animated: Bool)`
   /// - **Summary:**  Selects a row in a specified component of the picker view.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uipickerview/1614382-selectrow) for more info.
+  @inlinable
   @discardableResult
   func rowSelected(_ row: Int, inComponent component: Int, animated: Bool = true) -> Self {
     base.selectRow(row, inComponent: component, animated: animated)

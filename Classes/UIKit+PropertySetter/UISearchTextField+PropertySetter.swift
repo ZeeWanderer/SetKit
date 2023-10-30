@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UISearchTextField {
   /// PropertySetter wrapper for `.tokens`
   /// - **Summary:**  The collection of tokens in the search text field.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchtextfield/3175443-tokens) for more info.
+  @inlinable
   @discardableResult
   func tokens(_ tokens: [UISearchToken]) -> Self {
     base.tokens = tokens
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UISearchTextField {
   /// PropertySetter wrapper for `.tokenBackgroundColor`
   /// - **Summary:**  The background color for all tokens in the search text field.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchtextfield/3175442-tokenbackgroundcolor) for more info.
+  @inlinable
   @discardableResult
   func tokenBackgroundColor(_ color: UIColor) -> Self {
     base.tokenBackgroundColor = color
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UISearchTextField {
   /// PropertySetter wrapper for `.allowsDeletingTokens`
   /// - **Summary:**  A Boolean that indicates whether the user can remove tokens from the search field.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchtextfield/3175436-allowsdeletingtokens) for more info.
+  @inlinable
   @discardableResult
   func allowsDeletingTokens(_ bool: Bool) -> Self {
     base.allowsDeletingTokens = bool
@@ -57,6 +60,7 @@ public extension PropertySetter where Base: UISearchTextField {
   /// PropertySetter wrapper for `.allowsCopyingTokens`
   /// - **Summary:**  A Boolean that indicates whether the user can copy or drag tokens from the search field.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchtextfield/3175435-allowscopyingtokens) for more info.
+  @inlinable
   @discardableResult
   func allowsCopyingTokens(_ bool: Bool) -> Self {
     base.allowsCopyingTokens = bool
@@ -72,6 +76,7 @@ public extension PropertySetter where Base: UISearchTextField {
   /// PropertySetter wrapper for `.searchSuggestions`
   /// - **Summary:**   A list of suggestions to offer as shortcuts below the search field.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchtextfield/3979296-searchsuggestions) for more info.
+  @inlinable
   @discardableResult
   func searchSuggestions(_ suggestions: [UISearchSuggestion]?) -> Self {
     base.searchSuggestions = suggestions

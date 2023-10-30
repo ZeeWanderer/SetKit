@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.delegate`
   /// - **Summary:**  The search controller’s delegate.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/1618654-delegate) for more info.
+  @inlinable
   @discardableResult
   func delegate(_ delegate: UISearchControllerDelegate?) -> Self {
     base.delegate = delegate
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.searchResultsUpdater`
   /// - **Summary:**  The object responsible for updating the contents of the search results controller.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/1618661-searchresultsupdater) for more info.
+  @inlinable
   @discardableResult
   func searchResultsUpdater(_ update: UISearchResultsUpdating?) -> Self {
     base.searchResultsUpdater = update
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.obscuresBackgroundDuringPresentation`
   /// - **Summary:**  A Boolean indicating whether to obscure the underlying content during a search.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/1618656-obscuresbackgroundduringpresenta) for more info.
+  @inlinable
   @discardableResult
   func obscuresBackgroundDuringPresentation(_ bool: Bool) -> Self {
     base.obscuresBackgroundDuringPresentation = bool
@@ -57,6 +60,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.automaticallyShowsCancelButton`
   /// - **Summary:**  A Boolean indicating whether the search controller manages the visibility of the search bar’s cancel button.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/3152926-automaticallyshowscancelbutton) for more info.
+  @inlinable
   @discardableResult
   func automaticallyShowsCancelButton(_ bool: Bool) -> Self {
     base.automaticallyShowsCancelButton = bool
@@ -66,6 +70,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.automaticallyShowsSearchResultsController`
   /// - **Summary:**  A Boolean indicating whether the search controller manages the visibility of its results controller.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/3153160-automaticallyshowssearchresultsc) for more info.
+  @inlinable
   @discardableResult
   func automaticallyShowsSearchResultsController(_ bool: Bool) -> Self {
     base.automaticallyShowsSearchResultsController = bool
@@ -75,6 +80,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.hidesNavigationBarDuringPresentation`
   /// - **Summary:**  A Boolean indicating whether to hide the navigation bar when searching.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/1618650-hidesnavigationbarduringpresenta) for more info.
+  @inlinable
   @discardableResult
   func hidesNavigationBarDuringPresentation(_ bool: Bool) -> Self {
     base.hidesNavigationBarDuringPresentation = bool
@@ -100,6 +106,7 @@ public extension PropertySetter where Base: UISearchController {
   ///  }
   /// ```
   /// >Tip: You can always set searchBar properties using it's own PropertySetter directly: `searchController.searchBar.set`
+  @inlinable
   @discardableResult
   func searchBarProperties(_ block: @escaping (PropertySetter<UISearchBar>) -> Void) -> Self {
     block(base.searchBar.set)
@@ -115,6 +122,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.ignoresSearchSuggestionsForSearchBarPlacementStacked`
   /// - **Summary:**  A Boolean value you use to specify whether the search controller prevents search suggestions from displaying for a stacked search bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/4044392-ignoressearchsuggestionsforsearc) for more info.
+  @inlinable
   @discardableResult
   func ignoresSearchSuggestionsForSearchBarPlacementStacked(_ bool: Bool) -> Self {
     base.ignoresSearchSuggestionsForSearchBarPlacementStacked = bool
@@ -124,6 +132,7 @@ public extension PropertySetter where Base: UISearchController {
   /// PropertySetter wrapper for `.scopeBarActivation`
   /// - **Summary:**  A mode that determines when the search controller shows and hides the scope bar.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uisearchcontroller/4057372-scopebaractivation) for more info.
+  @inlinable
   @discardableResult
   func scopeBarActivation(_ activation: UISearchController.ScopeBarActivation) -> Self {
     base.scopeBarActivation = activation

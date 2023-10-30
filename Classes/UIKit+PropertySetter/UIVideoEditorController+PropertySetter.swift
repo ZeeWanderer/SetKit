@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UIVideoEditorController {
   /// PropertySetter wrapper for `.delegate`
   /// - **Summary:** The video editor’s delegate object.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622341-delegate) for more info.
+  @inlinable
   @discardableResult
   func delegate(_ delegate: (UIVideoEditorControllerDelegate & UINavigationControllerDelegate)?) -> Self {
     base.delegate = delegate
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UIVideoEditorController {
   /// PropertySetter wrapper for `.videoMaximumDuration`
   /// - **Summary:** The maximum duration, in seconds, permitted for trimmed movies saved by the video editor.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622338-videomaximumduration) for more info.
+  @inlinable
   @discardableResult
   func videoMaximumDuration(_ duration: TimeInterval) -> Self {
     base.videoMaximumDuration = duration
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UIVideoEditorController {
   /// PropertySetter wrapper for `.videoQuality`
   /// - **Summary:**  The video quality to use when saving a trimmed movie.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622339-videoquality) for more info.
+  @inlinable
   @discardableResult
   func videoQuality(_ quality: UIImagePickerController.QualityType) -> Self {
     base.videoQuality = quality
@@ -56,6 +59,7 @@ public extension PropertySetter where Base: UIVideoEditorController {
   
   /// PropertySetter wrapper for `.videoPath`
   /// - **Summary:**  The filesystem path to the movie to be loaded by the video editor.
+  @inlinable
   @discardableResult
   func videoPath(_ path: String) -> Self {
     base.videoPath = path

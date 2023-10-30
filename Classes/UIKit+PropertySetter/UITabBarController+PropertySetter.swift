@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UITabBarController {
   /// PropertySetter wrapper for `.selectedViewController`
   /// - **Summary:** The view controller associated with the currently selected tab item.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621172-selectedviewcontroller) for more info.
+  @inlinable
   @discardableResult
   func selectedViewController(_ controller: UIViewController?) -> Self {
     base.selectedViewController = controller
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UITabBarController {
   /// PropertySetter wrapper for `.selectedIndex`
   /// - **Summary:** The index of the view controller associated with the currently selected tab item.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621171-selectedindex) for more info.
+  @inlinable
   @discardableResult
   func selectedIndex(_ index: Int) -> Self {
     base.selectedIndex = index
@@ -48,6 +50,7 @@ public extension PropertySetter where Base: UITabBarController {
   /// PropertySetter wrapper for `.delegate`
   /// - **Summary:** The tab bar controller’s delegate object.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621164-delegate) for more info.
+  @inlinable
   @discardableResult
   func delegate(_ delegate: UITabBarControllerDelegate?) -> Self {
     base.delegate = delegate
@@ -57,6 +60,7 @@ public extension PropertySetter where Base: UITabBarController {
   /// PropertySetter wrapper for `.customizableViewControllers`
   /// - **Summary:** The subset of view controllers managed by this tab bar controller that can be customized.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621184-customizableviewcontrollers) for more info.
+  @inlinable
   @discardableResult
   func customizableViewControllers(_ controllers: [UIViewController]) -> Self {
     base.customizableViewControllers = controllers
@@ -70,6 +74,7 @@ public extension PropertySetter where Base: UITabBarController {
   /// **PropertySetter description**
   ///
   /// If you want to animate the change use ``SetKit/PropertySetter/viewControllers(_:animated:)-2zgx8``
+  @inlinable
   @discardableResult
   func viewControllers(_ controllers: [UIViewController]) -> Self {
     base.viewControllers = controllers
@@ -79,6 +84,7 @@ public extension PropertySetter where Base: UITabBarController {
   /// PropertySetter wrapper for `.setViewControllers(_ controllers: [UIViewController], animated: Bool)`
   /// - **Summary:** Sets the root view controllers of the tab bar controller.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621177-setviewcontrollers) for more info.
+  @inlinable
   @discardableResult
   func viewControllers(_ controllers: [UIViewController], animated: Bool) -> Self {
     base.setViewControllers(controllers, animated: animated)

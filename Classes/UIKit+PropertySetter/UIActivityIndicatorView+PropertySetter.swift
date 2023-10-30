@@ -30,6 +30,7 @@ public extension PropertySetter where Base: UIActivityIndicatorView {
   /// PropertySetter wrapper for `.hidesWhenStopped`
   /// - **Summary:**  A Boolean value that controls whether the activity indicator is hidden when the animation is stopped.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiactivityindicatorview/1622837-hideswhenstopped) for more info.
+  @inlinable
   @discardableResult
   func hidesWhenStopped(_ bool: Bool) -> Self {
     base.hidesWhenStopped = bool
@@ -39,6 +40,7 @@ public extension PropertySetter where Base: UIActivityIndicatorView {
   /// PropertySetter wrapper for `.color`
   /// - **Summary:**  The color of the activity indicator.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiactivityindicatorview/1622836-color) for more info.
+  @inlinable
   @discardableResult
   func color(_ color: UIColor) -> Self {
     base.color = color
@@ -46,6 +48,7 @@ public extension PropertySetter where Base: UIActivityIndicatorView {
   }
   
   /// PropertySetter wrapper for `.startAnimating()` or `.stopAnimating()` based on parameter value
+  @inlinable
   @discardableResult
   func animating(_ bool: Bool) -> Self {
     if bool {
@@ -59,6 +62,7 @@ public extension PropertySetter where Base: UIActivityIndicatorView {
   /// PropertySetter wrapper for `.activityIndicatorViewStyle`
   /// - **Summary:**  The basic appearance of the activity indicator.
   /// See [**documentation**](https://developer.apple.com/documentation/uikit/uiactivityindicatorview/1622847-style) for more info.
+  @inlinable
   @discardableResult
   func activityIndicatorViewStyle(_ style: UIActivityIndicatorView.Style) -> Self {
     base.style = style
