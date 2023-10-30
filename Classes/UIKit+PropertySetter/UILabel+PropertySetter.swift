@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UILabel
 public extension PropertySetter where Base: UILabel {

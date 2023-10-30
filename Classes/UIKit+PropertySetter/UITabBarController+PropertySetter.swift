@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UITabBarController
 public extension PropertySetter where Base: UITabBarController {

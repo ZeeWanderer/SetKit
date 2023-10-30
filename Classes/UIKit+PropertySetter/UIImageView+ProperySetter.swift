@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIImageView
 public extension PropertySetter where Base: UIImageView {

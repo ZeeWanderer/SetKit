@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIScrollView
 public extension PropertySetter where Base: UIScrollView {

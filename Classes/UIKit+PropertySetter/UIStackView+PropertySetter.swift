@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIStackView
 public extension PropertySetter where Base: UIStackView {

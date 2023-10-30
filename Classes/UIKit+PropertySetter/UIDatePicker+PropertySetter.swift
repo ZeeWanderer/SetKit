@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIDatePicker
 public extension PropertySetter where Base: UIDatePicker {

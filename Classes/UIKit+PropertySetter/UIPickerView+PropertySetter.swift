@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIPickerView
 public extension PropertySetter where Base: UIPickerView {

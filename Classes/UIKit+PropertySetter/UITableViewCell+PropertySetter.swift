@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UITableViewCell
 public extension PropertySetter where Base: UITableViewCell {

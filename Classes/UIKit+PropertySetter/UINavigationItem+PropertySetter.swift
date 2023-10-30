@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UINavigationItem
 public extension PropertySetter where Base: UINavigationItem {

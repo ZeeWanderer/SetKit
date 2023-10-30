@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UISegmentedControl
 public extension PropertySetter where Base: UISegmentedControl {

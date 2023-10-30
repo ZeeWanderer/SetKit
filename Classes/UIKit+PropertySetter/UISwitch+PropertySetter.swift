@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UISwitch
 public extension PropertySetter where Base: UISwitch {

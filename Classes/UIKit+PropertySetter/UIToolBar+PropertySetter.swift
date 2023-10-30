@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIToolbar
 public extension PropertySetter where Base: UIToolbar {

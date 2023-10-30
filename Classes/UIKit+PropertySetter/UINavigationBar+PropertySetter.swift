@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UINavigationBar
 public extension PropertySetter where Base: UINavigationBar {

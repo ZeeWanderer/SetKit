@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UINavigationController
 public extension PropertySetter where Base: UINavigationController {

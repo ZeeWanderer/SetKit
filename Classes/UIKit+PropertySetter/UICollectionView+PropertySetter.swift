@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UICollectionView
 public extension PropertySetter where Base: UICollectionView {

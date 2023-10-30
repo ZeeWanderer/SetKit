@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIActivityIndicatorView
 public extension PropertySetter where Base: UIActivityIndicatorView {

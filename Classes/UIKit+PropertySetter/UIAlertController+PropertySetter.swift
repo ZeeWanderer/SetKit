@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIAlertController
 public extension PropertySetter where Base: UIAlertController {

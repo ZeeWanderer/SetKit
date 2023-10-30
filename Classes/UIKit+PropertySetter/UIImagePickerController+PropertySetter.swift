@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIImagePickerController
 public extension PropertySetter where Base: UIImagePickerController {

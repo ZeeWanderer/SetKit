@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UISearchController
 public extension PropertySetter where Base: UISearchController {

@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIProgressView
 public extension PropertySetter where Base: UIProgressView {

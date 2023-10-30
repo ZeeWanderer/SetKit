@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import SetKitBase
 
 // MARK: - UIVideoEditorController
 public extension PropertySetter where Base: UIVideoEditorController {
