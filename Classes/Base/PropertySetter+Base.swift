@@ -36,6 +36,7 @@ public protocol PropertySetterCompatible {
 extension PropertySetterCompatible {
   
   /// Property setter extensions.
+  @inlinable
   public var set: PropertySetter<Self> {
     return PropertySetter(self)
   }
@@ -47,6 +48,7 @@ extension PropertySetterCompatible {
   /// Extended type
   public let base: Base
   
+  @usableFromInline
   init(_ base: Base) {
     self.base = base
   }
