@@ -22,6 +22,7 @@
 //  THE SOFTWARE.
 
 import Foundation
+import QuartzCore
 
 // MARK: - ViewShape
 /// An enum that represents possible shape types to round corners of the view
