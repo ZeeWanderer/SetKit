@@ -12,12 +12,32 @@ let package = Package(
         .library(
             name: "SetKit",
             //type: .static,
-            targets: ["SetKit"]),
+            targets: ["SetKitUIKit"]),
+        .library(
+            name: "SetKit_SnapKit",
+            //type: .static,
+            targets: ["SetKitSnapKit"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
     ],
     targets: [
         .target(
-            name: "SetKit",
-            path: "Classes",
+            name: "SetKitBase",
+            path: "Classes/Base",
+            swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
+        ),
+        .target(
+            name: "SetKitUIKit",
+            dependencies: ["SetKitBase"],
+            path: "Classes/UIKit+PropertySetter",
+            swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
+        )
+        ,
+        .target(
+            name: "SetKitSnapKit",
+            dependencies: ["SetKitBase", .product(name: "SnapKit", package: "SnapKit")],
+            path: "Classes/SnapKit+PropertySetter",
             swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
         )
     ]
