@@ -11,11 +11,11 @@ let package = Package(
     products: [
         .library(
             name: "SetKit",
-            //type: .static,
-            targets: ["SetKitUIKit"]),
+            type: .static,
+            targets: ["SetKit"]),
         .library(
-            name: "SetKit_SnapKit",
-            //type: .static,
+            name: "SetKitSnapKit",
+            type: .static,
             targets: ["SetKitSnapKit"]),
     ],
     dependencies: [
@@ -28,7 +28,7 @@ let package = Package(
             swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
         ),
         .target(
-            name: "SetKitUIKit",
+            name: "SetKit",
             dependencies: ["SetKitBase"],
             path: "Classes/UIKit+PropertySetter",
             swiftSettings: [.enableUpcomingFeature("StrictConcurrency")]
