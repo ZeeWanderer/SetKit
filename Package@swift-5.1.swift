@@ -14,9 +14,9 @@ let package = Package(
             type: .static,
             targets: ["SetKit"]),
         .library(
-            name: "SetKitSnapKit",
+            name: "SnappySetKit",
             type: .static,
-            targets: ["SetKitSnapKit"]),
+            targets: ["SnappySetKit"]),
     ],
     dependencies: [
         .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
@@ -32,7 +32,7 @@ let package = Package(
             path: "Classes/UIKit+PropertySetter"
         ),
         .target(
-            name: "SetKitSnapKit",
+            name: "SnappySetKit",
             dependencies: ["SetKitBase", .product(name: "SnapKit", package: "SnapKit")],
             path: "Classes/SnapKit+PropertySetter"
         )
