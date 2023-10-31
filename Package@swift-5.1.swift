@@ -12,11 +12,7 @@ let package = Package(
         .library(
             name: "SetKit",
             type: .static,
-            targets: ["SetKit"]),
-        .library(
-            name: "SnappySetKit",
-            type: .static,
-            targets: ["SnappySetKit"]),
+            targets: ["SetKit", "SnappySetKit"])
     ],
     dependencies: [
         .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
